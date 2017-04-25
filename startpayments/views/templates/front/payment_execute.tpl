@@ -24,7 +24,7 @@
             submitFormWithToken(params);
         },
         cancel: function () {
-            window.location.replace("index.php?controller=order&step=3");
+            history.go(-1);
         }
     });
     StartCheckout.open({
